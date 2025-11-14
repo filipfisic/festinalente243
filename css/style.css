@@ -1052,19 +1052,19 @@ p {
 }
 
 .days-until {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 
 .days-until::before {
     content: '\f017'; /* Font Awesome clock icon */
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .btn-book {
