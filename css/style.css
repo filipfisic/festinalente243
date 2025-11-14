@@ -952,7 +952,7 @@ p {
 
 .upcoming-image {
     position: relative;
-    height: 280px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -1006,7 +1006,7 @@ p {
 }
 
 .upcoming-content {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -1020,7 +1020,7 @@ p {
 }
 
 .upcoming-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 0;
     color: var(--text-dark);
     flex-grow: 1;
@@ -1028,9 +1028,10 @@ p {
 
 .upcoming-description {
     color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: var(--spacing-md);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-sm);
     flex-grow: 1;
+    font-size: 0.95rem;
 }
 
 .upcoming-year {
