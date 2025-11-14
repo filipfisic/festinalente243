@@ -952,7 +952,7 @@ p {
 
 .upcoming-image {
     position: relative;
-    height: 200px;
+    height: 160px;
     overflow: hidden;
 }
 
@@ -969,15 +969,15 @@ p {
 
 .upcoming-date-badge {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 12px;
+    right: 12px;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     color: var(--text-light);
-    padding: 12px 16px;
+    padding: 8px 12px;
     border-radius: var(--border-radius-md);
     text-align: center;
     box-shadow: 0 4px 15px rgba(245, 141, 84, 0.4);
-    min-width: 70px;
+    min-width: 60px;
     animation: pulse 2s ease-in-out infinite;
     transition: all var(--transition-fast);
 }
@@ -989,7 +989,7 @@ p {
 
 .date-day {
     display: block;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 1;
     font-family: var(--heading-font);
@@ -997,16 +997,16 @@ p {
 
 .date-month {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 4px;
+    margin-top: 2px;
     opacity: 0.95;
 }
 
 .upcoming-content {
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -1020,7 +1020,7 @@ p {
 }
 
 .upcoming-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     margin: 0;
     color: var(--text-dark);
     flex-grow: 1;
@@ -1028,10 +1028,10 @@ p {
 
 .upcoming-description {
     color: var(--text-muted);
-    line-height: 1.5;
-    margin-bottom: var(--spacing-sm);
+    line-height: 1.4;
+    margin-bottom: var(--spacing-xs);
     flex-grow: 1;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .upcoming-year {
