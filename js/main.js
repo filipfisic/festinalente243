@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
             transform: translateY(0);
         }
         
-        h2 {
+        section h2 {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
     
     // Observe additional elements
-    const additionalElements = document.querySelectorAll('.service-card, .testimonial-item, .contact-method, h2');
+    const additionalElements = document.querySelectorAll('.service-card, .testimonial-item, .contact-method, section h2');
     additionalElements.forEach((element, index) => {
         observer.observe(element);
         // Add staggered animation delay for contact methods
