@@ -237,30 +237,85 @@
     }
 
     /* Blog Section */
+    .blog-section {
+        padding: var(--spacing-md) 0;
+    }
+
+    .blog-section .section-subtitle {
+        margin-bottom: var(--spacing-sm);
+    }
+
     .blog-grid {
         grid-template-columns: 1fr;
+        margin-top: var(--spacing-sm);
+        gap: var(--spacing-md);
     }
 
     .blog-card-image {
-        height: 200px;
+        height: 160px;
+    }
+
+    .blog-card-overlay {
+        padding: var(--spacing-sm);
+    }
+
+    .blog-card-content {
+        padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-md);
+    }
+
+    .blog-card-content h3 {
+        font-size: 1.15rem;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .blog-card-content p {
+        font-size: 0.88rem;
+        -webkit-line-clamp: 2;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .blog-read-more {
+        font-size: 0.8rem;
     }
 
     .blog-post-hero {
-        height: 350px;
+        height: 300px;
         margin-top: 60px;
     }
 
     .blog-post-hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .blog-post-hero-meta {
         flex-wrap: wrap;
-        gap: var(--spacing-sm);
+        gap: var(--spacing-xs);
+    }
+
+    .blog-post-hero-meta span {
+        font-size: 0.75rem;
+    }
+
+    .blog-post-hero .container {
+        padding-bottom: var(--spacing-md);
+    }
+
+    .blog-post-content {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .blog-post-content p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .blog-post-content p:first-of-type {
+        font-size: 1.05rem;
     }
 
     .blog-post-content p:first-of-type::first-letter {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        padding-right: 8px;
     }
 }
 
@@ -301,20 +356,20 @@
         padding: var(--spacing-sm);
     }
 
+    .blog-card-image {
+        height: 140px;
+    }
+
     .blog-post-hero {
-        height: 280px;
+        height: 240px;
     }
 
     .blog-post-hero h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
-    .blog-meta {
-        gap: var(--spacing-sm);
-    }
-
-    .blog-card-content {
-        padding: var(--spacing-sm);
+    .blog-post-content p:first-of-type::first-letter {
+        font-size: 2.2rem;
     }
 
     #back-to-top {
