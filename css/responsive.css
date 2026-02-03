@@ -97,7 +97,11 @@
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .upcoming-trips {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -231,6 +235,33 @@
     .reviews-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Blog Section */
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card-image {
+        height: 200px;
+    }
+
+    .blog-post-hero {
+        height: 350px;
+        margin-top: 60px;
+    }
+
+    .blog-post-hero h1 {
+        font-size: 2rem;
+    }
+
+    .blog-post-hero-meta {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+
+    .blog-post-content p:first-of-type::first-letter {
+        font-size: 2.8rem;
+    }
 }
 
 /* Extra Small Devices (Portrait Phones, less than 576px) */
@@ -267,6 +298,22 @@
     }
     
     .review-card {
+        padding: var(--spacing-sm);
+    }
+
+    .blog-post-hero {
+        height: 280px;
+    }
+
+    .blog-post-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .blog-meta {
+        gap: var(--spacing-sm);
+    }
+
+    .blog-card-content {
         padding: var(--spacing-sm);
     }
 

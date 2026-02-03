@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zašto posjetiti Maltu? | FESTINA LENTE 243</title>
+    <meta name="description" content="Malta kao jedan od najatraktivnijih otoka na Mediteranu — saznajte zašto je savršen izbor za city break destinaciju.">
+
+    <!-- Font Awesome za ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS stilovi -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Header sekcija -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html#hero">
+                    <h2>FESTINA LENTE 243</h2>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html#hero">Naslovna</a></li>
+                    <li><a href="../index.html#about">O meni</a></li>
+                    <li><a href="../index.html#upcoming">Iduća putovanja</a></li>
+                    <li><a href="../index.html#gallery">Galerija</a></li>
+                    <li><a href="../index.html#blog">Blog</a></li>
+                    <li><a href="../index.html#testimonials">Recenzije</a></li>
+                    <li><a href="../index.html#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle" aria-label="Otvori izbornik">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Blog Post Hero -->
+    <div class="blog-post-hero" style="background-image: url('../images/blog/malta-cover.jpg');">
+        <div class="container">
+            <div class="blog-post-hero-meta">
+                <span class="blog-tag">Destinacija</span>
+                <span><i class="far fa-calendar-alt"></i> Veljača 2026</span>
+                <span><i class="far fa-clock"></i> 3 min čitanja</span>
+            </div>
+            <h1>Zašto posjetiti Maltu?</h1>
+        </div>
+    </div>
+
+    <!-- Blog Post Content -->
+    <section class="blog-post-content">
+        <div class="container">
+            <a href="../index.html#blog" class="blog-back-link"><i class="fas fa-arrow-left"></i> Natrag na blog</a>
+
+            <p>Malta kao jedan od najatraktivnijih otoka na Mediteranu, dostupan je svojim posjetiteljima cijele godine. Zašto je Malta doživjela procvat kod nas te kako je postala država s najvećim postotnim porastom turista u EU nakon pandemije, možemo svesti pod 3 čimbenika.</p>
+
+            <hr class="blog-post-divider">
+
+            <p>Nedvojbeno je, posebice za nas, prvi Ryanair. Kada irska budget friendly aviokompanija povećala flote prema otoku te 2022. uvrstila liniju između Zagreba i Vallete, s preko 300 letova godišnje je napravila veliki korak u ekspanziji Hrvata na taj atraktivan otok.</p>
+
+            <p>Drugi svakako jest to što Malta, s obzirom na svoju veličinu, nudi mnogo atrakcija; od povijesnih arheoloških nalazišta poput Hagar Qima te Ggigantije koji su stariji od egipatskih piramida i engleskog Stonehengea te šarmantim gradovima poput Vallete i Mdine, zaokružuje se priču o zanimljivoj priči Malte.</p>
+
+            <p>I naravno, treći razlog je bogata gastronomska te hotelska ponuda, koja je posebice izvan sezone, veoma pristupačna. Kada smo se već dotaknuli i tog dijela, moramo spomenuti i malteško nacionalno jelo — „stuffat tal-fenek" sporokuhanom gulašu od zeca s rajčicom, crnim vinom, lukom, češnjakom, lovorom i začinima.</p>
+
+            <p>Uz gotovo svako jelo se može probati i bajtra — malteški liker od ploda opuncije (prickly pear), tipično s 21% alkohola voćanog okusa obično se pije dobro rashlađen kao digestiv ili u koktelima poput Bajtra spritza koji je u zadnje vrijeme postao popularniji od Aperola.</p>
+
+            <p>Zbog svih navedenih razloga, vrijeme je za posjetu Malti kao savršenom izboru za „city break" destinaciju.</p>
+
+            <div class="blog-post-footer">
+                <a href="../index.html#blog" class="blog-back-link"><i class="fas fa-arrow-left"></i> Natrag na blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer sekcija -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info-left">
+                    <p><i class="fas fa-map-marker-alt"></i> FESTINA LENTE 243 — obrt za pružanje usluga u turizmu</p>
+                </div>
+
+                <div class="footer-info-right">
+                    <p><i class="fas fa-envelope"></i> info@festinalente243.hr</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> FESTINA LENTE 243 | Sva prava pridržana | Designed by Tempus est</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        var menuToggle = document.querySelector('.mobile-menu-toggle');
+        var header = document.querySelector('#header');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function() {
+                header.classList.toggle('mobile-menu-active');
+            });
+        }
+
+        // Sticky header
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
