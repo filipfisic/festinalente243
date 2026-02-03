@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FESTINA LENTE 243 | Ivan Forko - vaš vodič za nezaboravna putovanja</title>
+    <meta name="description" content="FESTINA LENTE 243 - Vaš vodič za nezaboravna putovanja na egzotične destinacije. Ivan Forko s više od 10 godina iskustva vodi vas kroz najljepše lokacije svijeta.">
+    
+    <!-- Font Awesome za ikone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS stilovi -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header sekcija -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero">
+                    <h2>FESTINA LENTE 243</h2>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Naslovna</a></li>
+                    <li><a href="#about">O meni</a></li>
+                    <li><a href="#upcoming">Iduća putovanja</a></li>
+                    <li><a href="#gallery">Galerija</a></li>
+                    <li><a href="#testimonials">Recenzije</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            <div class="social-icons">
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Otvori izbornik">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero sekcija -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>IVAN FORKO</h1>
+                <p class="subtitle">Vaš vodič za nezaboravna putovanja</p>
+                <a href="#contact" class="btn btn-primary">Kontaktirajte nas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- O meni sekcija -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>O meni</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Ivan Forko je vodič s više od deset godina iskustva u vođenju putovanja na egzotične destinacije. Njegova strast za otkrivanjem novih kultura i krajolika inspirira putnike i čini svako putovanje nezaboravnim.</p>
+                    <p>Ivan prilagođava svako putovanje interesima i potrebama putnika. Bez obzira na to volite li prirodu, luksuz ili gradsku vrevu, Ivan osigurava jedinstvena i autentična iskustva.</p>
+                    <p>Sigurnost je Ivanov prioritet, a njegovo znanje o lokalnim običajima i jezicima jamči ugodno i sigurno putovanje. Profesionalan i smiren, idealan je vodič za svaku avanturu.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/omeni.jpeg" alt="Ivan Forko - Vodič">
+                </div>
+            </div>
+            
+            <div class="world-map-wrapper">
+                <h3>Zemlje koje sam posjetio</h3>
+                <div id="world-map"></div>
+            </div>
+
+            <div class="benefits-wrapper">
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Putničke ture</h3>
+                        <p>Organizirane ture na najljepše destinacije svijeta.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3>Istraži svijet</h3>
+                        <p>Otkrijte skrivene dragulje i autentična iskustva.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>Egzotične lokacije</h3>
+                        <p>Posjetite najljepše i najegzotičnije destinacije.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Nezaboravna mjesta</h3>
+                        <p>Stvorite uspomene koje će trajati cijeli život.</p>
+                    </div>
+                </div>
+                <div class="benefits-controls">
+                    <button class="benefits-prev-btn" aria-label="Prethodna kartica"><i class="fas fa-chevron-left"></i></button>
+                    <div class="benefits-dots">
+                        <span class="benefit-dot active"></span>
+                        <span class="benefit-dot"></span>
+                        <span class="benefit-dot"></span>
+                        <span class="benefit-dot"></span>
+                    </div>
+                    <button class="benefits-next-btn" aria-label="Sljedeća kartica"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iduća putovanja sekcija -->
+    <section id="upcoming" class="upcoming-section">
+        <div class="container">
+            <h2>Rezervirajte svoje putovanje</h2>
+            <p class="section-subtitle">Odaberite datum i pridružite nam se na nezaboravnoj avanturi</p>
+            <div class="upcoming-trips">
+                <div class="upcoming-card" data-date="2026-05-15">
+                    <div class="upcoming-image">
+                        <img src="images/jadran.jpg" alt="Jadransko more">
+                        <div class="upcoming-date-badge">
+                            <span class="date-day">15</span>
+                            <span class="date-month">Svi</span>
+                        </div>
+                    </div>
+                    <div class="upcoming-content">
+                        <div class="upcoming-header">
+                            <h3>Jadransko more</h3>
+                            <span class="upcoming-year">2026</span>
+                        </div>
+                        <p class="upcoming-description">Doživite ljepotu Jadranskog mora i nezaboravne trenutke na obali.</p>
+                        <div class="upcoming-footer">
+                            <span class="days-until" data-date="2026-05-15"></span>
+                            <a href="#contact" class="btn-book">Rezerviraj</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upcoming-card" data-date="2026-06-20">
+                    <div class="upcoming-image">
+                        <img src="images/man-walking-stone-pathway-surrou.jpg" alt="Velebit">
+                        <div class="upcoming-date-badge">
+                            <span class="date-day">20</span>
+                            <span class="date-month">Lip</span>
+                        </div>
+                    </div>
+                    <div class="upcoming-content">
+                        <div class="upcoming-header">
+                            <h3>Velebit</h3>
+                            <span class="upcoming-year">2026</span>
+                        </div>
+                        <p class="upcoming-description">Istražite divlje ljepote Velebita i uživajte u planinskim stazama.</p>
+                        <div class="upcoming-footer">
+                            <span class="days-until" data-date="2026-06-20"></span>
+                            <a href="#contact" class="btn-book">Rezerviraj</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upcoming-card" data-date="2026-07-10">
+                    <div class="upcoming-image">
+                        <img src="images/high-angle-shot-beautiful-sunrise-italian-alps-italy--545346.jpg" alt="Alpe">
+                        <div class="upcoming-date-badge">
+                            <span class="date-day">10</span>
+                            <span class="date-month">Srp</span>
+                        </div>
+                    </div>
+                    <div class="upcoming-content">
+                        <div class="upcoming-header">
+                            <h3>Alpe</h3>
+                            <span class="upcoming-year">2026</span>
+                        </div>
+                        <p class="upcoming-description">Usponite se na vrhove Alpa i doživite spektakularne panorame.</p>
+                        <div class="upcoming-footer">
+                            <span class="days-until" data-date="2026-07-10"></span>
+                            <a href="#contact" class="btn-book">Rezerviraj</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upcoming-card" data-date="2026-08-25">
+                    <div class="upcoming-image">
+                        <img src="images/plitvice.jpg" alt="Plitvička jezera">
+                        <div class="upcoming-date-badge">
+                            <span class="date-day">25</span>
+                            <span class="date-month">Kol</span>
+                        </div>
+                    </div>
+                    <div class="upcoming-content">
+                        <div class="upcoming-header">
+                            <h3>Plitvička jezera</h3>
+                            <span class="upcoming-year">2026</span>
+                        </div>
+                        <p class="upcoming-description">Otkrijte čarobne vodopade i kristalno čista jezera Plitvica.</p>
+                        <div class="upcoming-footer">
+                            <span class="days-until" data-date="2026-08-25"></span>
+                            <a href="#contact" class="btn-book">Rezerviraj</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerija sekcija -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Slike s naših putovanja</h2>
+            <div class="gallery-wrapper">
+                <div class="gallery-container">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="images/s1.png" alt="Negdje daleko">
+                            <div class="gallery-overlay">
+                                <h3>Negdje daleko</h3>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/s2.jpeg" alt="Azija">
+                            <div class="gallery-overlay">
+                                <h3>Azija</h3>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/s3.jpeg" alt="Vulkan El Fuego, Gvatemala">
+                            <div class="gallery-overlay">
+                                <h3>Vulkan El Fuego, Gvatemala</h3>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/s4.jpeg" alt="Artik: Svalbard, Norveška">
+                            <div class="gallery-overlay">
+                                <h3>Artik: Svalbard, Norveška</h3>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/s5.jpeg" alt="Nishiki market, Kyoto, Japan">
+                            <div class="gallery-overlay">
+                                <h3>Nishiki market, Kyoto, Japan</h3>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/s6.jpeg" alt="Shibuya crossing, Tokyo, Japan">
+                            <div class="gallery-overlay">
+                                <h3>Shibuya crossing, Tokyo, Japan</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recenzije sekcija -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>Što naši putnici kažu o nama</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Nezaboravno iskustvo! Ivan je izvrstan vodič koji nas je odveo na najljepša mjesta. Svakako preporučujem!</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Anja Kuščević (ST)</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Najbolje putovanje ikad! Profesionalan pristup, odlična organizacija i prekrasne destinacije. Hvala Ivan!</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Marija Blažanović</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Ivan je pravi profesionalac. Svako putovanje s njim je posebno iskustvo koje ću pamtiti cijeli život.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Iva Karačić</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="prev-btn" aria-label="Prethodna recenzija"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn" aria-label="Sljedeća recenzija"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt sekcija -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Javite nam se</h2>
+            <p class="section-subtitle">Kontaktirajte nas za više informacija o našim putovanjima i rezervacije.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@festinalente243.hr</p>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+385 XX XXX XXXX</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Lokacija</h3>
+                    <p>Hrvatska</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer sekcija -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info-left">
+                    <p><i class="fas fa-map-marker-alt"></i> FESTINA LENTE 243</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+                <div class="footer-info-right">
+                    <p><i class="fas fa-phone"></i> Tel: +385 XX XXX XXXX</p>
+                    <p><i class="fas fa-envelope"></i> E-mail: info@festinalente243.hr</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> FESTINA LENTE 243 | Sva prava pridržana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" id="back-to-top" aria-label="Povratak na vrh"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- D3.js i TopoJSON za mapu svijeta -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
