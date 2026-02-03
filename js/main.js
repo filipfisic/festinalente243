@@ -53,76 +53,63 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Testimonials Slider
-    const testimonialItems = document.querySelectorAll('.testimonial-item');
-    const dots = document.querySelectorAll('.dot');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    let currentSlide = 0;
-    
-    function showSlide(index) {
-        // Hide all slides
-        testimonialItems.forEach(item => {
-            item.style.display = 'none';
+    // Reviews Sliders (per agency card)
+    document.querySelectorAll('.review-card').forEach(function(card) {
+        var slides = card.querySelectorAll('.review-slide');
+        var dotsContainer = card.querySelector('.review-dots');
+        var prevBtn = card.querySelector('.review-prev');
+        var nextBtn = card.querySelector('.review-next');
+        var current = 0;
+        var autoInterval = null;
+
+        // Generate dots
+        slides.forEach(function(_, i) {
+            var dot = document.createElement('span');
+            dot.className = 'review-dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', function() {
+                showReviewSlide(i);
+            });
+            dotsContainer.appendChild(dot);
         });
-        
-        // Remove active class from all dots
-        dots.forEach(dot => {
-            dot.classList.remove('active');
-        });
-        
-        // Show current slide and activate corresponding dot
-        if (testimonialItems[index]) {
-            testimonialItems[index].style.display = 'block';
+
+        var dots = dotsContainer.querySelectorAll('.review-dot');
+
+        function showReviewSlide(index) {
+            slides.forEach(function(s) { s.classList.remove('active'); });
+            dots.forEach(function(d) { d.classList.remove('active'); });
+            current = index;
+            slides[current].classList.add('active');
+            dots[current].classList.add('active');
         }
-        if (dots[index]) {
-            dots[index].classList.add('active');
-        }
-    }
-    
-    // Initialize slider
-    if (testimonialItems.length > 0) {
-        showSlide(currentSlide);
-        
-        // Next button click
+
         if (nextBtn) {
             nextBtn.addEventListener('click', function() {
-                currentSlide++;
-                if (currentSlide >= testimonialItems.length) {
-                    currentSlide = 0;
-                }
-                showSlide(currentSlide);
+                showReviewSlide((current + 1) % slides.length);
             });
         }
-        
-        // Previous button click
+
         if (prevBtn) {
             prevBtn.addEventListener('click', function() {
-                currentSlide--;
-                if (currentSlide < 0) {
-                    currentSlide = testimonialItems.length - 1;
-                }
-                showSlide(currentSlide);
+                showReviewSlide((current - 1 + slides.length) % slides.length);
             });
         }
-        
-        // Dot clicks
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', function() {
-                currentSlide = index;
-                showSlide(currentSlide);
-            });
+
+        function startAutoPlay() {
+            autoInterval = setInterval(function() {
+                showReviewSlide((current + 1) % slides.length);
+            }, 5000);
+        }
+
+        card.addEventListener('mouseenter', function() {
+            clearInterval(autoInterval);
         });
-        
-        // Auto slide (optional)
-        setInterval(function() {
-            currentSlide++;
-            if (currentSlide >= testimonialItems.length) {
-                currentSlide = 0;
-            }
-            showSlide(currentSlide);
-        }, 5000); // Change slide every 5 seconds
-    }
+        card.addEventListener('mouseleave', function() {
+            startAutoPlay();
+        });
+
+        showReviewSlide(0);
+        startAutoPlay();
+    });
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

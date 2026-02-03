@@ -102,22 +102,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .contact-methods {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
+    .contact-email-block {
+        padding: var(--spacing-lg) var(--spacing-md);
     }
-    
-    .contact-method {
-        padding: var(--spacing-md);
-    }
-    
-    .contact-icon-wrapper {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .contact-method i {
-        font-size: 1.8rem;
+
+    .contact-email {
+        font-size: 1.2rem;
     }
     
     .footer-content {
@@ -236,6 +226,11 @@
         width: 100%;
         text-align: center;
     }
+
+    /* Reviews Section */
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Extra Small Devices (Portrait Phones, less than 576px) */
@@ -271,10 +266,10 @@
         font-size: 0.9rem;
     }
     
-    .testimonial-quote {
-        padding: var(--spacing-md);
+    .review-card {
+        padding: var(--spacing-sm);
     }
-    
+
     #back-to-top {
         right: 15px;
         bottom: 15px;
